@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="style.css">
+   <title>formulário de cadastro</title>
+</head>
+
+<body>
+   <main class="container">
+      <h1>Contact Us</h1>
+      <form>
+         <div class="group-name">
+         <div>
+            <label for="fname">First Name *</label>
+            <input type="text" id="fname" />
+            <p class="message-erro"></p>
+         </div>
+
+         <div>
+            <label for="iname">Last Name *</label>
+            <input type="text" id="iname" />
+
+         </div>
+      </div>
+
+         <div class="group-email">
+            <label for="email">Email Address *</label>
+            <input type="email" id="email"/>
+         </div>
+
+         <fieldset>
+            <legend>Query Type *</legend>
+
+            <input type="radio" id="general" name="Query"/>
+            <label for="general">General Enquiry</label>
+
+            <input type="radio" id="support"/>
+            <label for="support">Support Request</label>
+         </fieldset>
+
+         <div class="group-message">
+            <label for="message">Message *</label>
+            <textarea name="message" id="message"></textarea>
+         </div>
+
+         <div class="group-term">
+            <input type="checkbox" id="term"/>
+            <label for="term">I consert to being contacted by the team</label>
+         </div>
+
+         <button type="button" onclick="validator()">Submit</button>
+      </form>
+   </main>
+
+
+   <script src="s.js"></script>
+</body>
+
+</html>
